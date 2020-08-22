@@ -11,6 +11,7 @@ import { formatValue } from "../utils/index";
 
 import DefaultText from "../components/DefaultText";
 import Button from "../components/Button";
+import Colors from "../constans/Colors";
 
 const ProductItem = ({ item, ...props }) => {
    return (
@@ -30,7 +31,12 @@ const ProductItem = ({ item, ...props }) => {
                   </ImageBackground>
                </View>
                <View style={{ ...styles.row, ...styles.detail }}>
-                  <Button style={styles.detailButton}>Details</Button>
+                  <Button
+                     onPress={props.onSelectItem}
+                     style={styles.detailButton}
+                  >
+                     Details
+                  </Button>
                   <DefaultText style={styles.detailText}>
                      {formatValue("currency", item.unit_rate)}
                   </DefaultText>
@@ -38,6 +44,7 @@ const ProductItem = ({ item, ...props }) => {
                   <Button
                      buttonStyle={styles.detailButton}
                      textStyle={styles.detailTextButton}
+                     onPress={props.onAddItemToCart}
                   >
                      Add to cart
                   </Button>
@@ -92,7 +99,7 @@ const styles = StyleSheet.create({
       fontSize: 20,
    },
    detailButton: {
-      backgroundColor: "green",
+      backgroundColor: Colors.accentColor,
    },
    detailTextButton: {
       color: "white",

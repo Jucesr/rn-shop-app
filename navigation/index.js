@@ -11,7 +11,7 @@ import AddProductScreen from "./AddProductScreen";
 import OrdersScreen from "./OrdersScreen";
 import CartScreen from "./CartScreen";
 import OwnProductsScreen from "./OwnProductsScreen";
-import ProductScreen from "./ProductScreen";
+import ProductDetailScreen from "./ProductDetailScreen";
 import ShopScreen from "./ShopScreen";
 
 import Colors from "../constans/Colors";
@@ -32,6 +32,8 @@ const defaultStackNavOptions = {
 const ShopNavigator = createStackNavigator(
    {
       shop: ShopScreen,
+      cart: CartScreen,
+      productDetail: ProductDetailScreen,
    },
    {
       defaultNavigationOptions: defaultStackNavOptions,
@@ -49,91 +51,12 @@ const OrdersNavigator = createStackNavigator(
 
 const ProductsNavigator = createStackNavigator(
    {
-      products: ProductScreen,
+      products: OwnProductsScreen,
    },
    {
       defaultNavigationOptions: defaultStackNavOptions,
    }
 );
-
-// const FavNavigator = createStackNavigator(
-//    {
-//       Favorites: FavoritesScreen,
-//       MealDetail: MealDetailScreen,
-//    },
-//    {
-//       defaultNavigationOptions: defaultStackNavOptions,
-//    }
-// );
-
-// const tabsScreenContent = {
-//    Meals: {
-//       screen: MealsNavigator,
-//       navigationOptions: {
-//          tabBarIcon: (tabInfo) => {
-//             return (
-//                <Ionicons
-//                   name="ios-restaurant"
-//                   size={25}
-//                   color={tabInfo.tintColor}
-//                />
-//             );
-//          },
-//          tabBarColor: Colors.primaryColor,
-//          tabBarLabel:
-//             Platform.OS === "android" ? (
-//                <Text style={{ fontFamily: "open-sans" }}>Meals</Text>
-//             ) : (
-//                "Meals"
-//             ),
-//       },
-//    },
-//    Favorites: {
-//       screen: FavNavigator,
-//       navigationOptions: {
-//          tabBarLabel:
-//             Platform.OS === "android" ? (
-//                <Text style={{ fontFamily: "open-sans" }}>Favorites</Text>
-//             ) : (
-//                "Favorites"
-//             ),
-//          tabBarIcon: (tabInfo) => {
-//             return (
-//                <Ionicons name="ios-star" size={25} color={tabInfo.tintColor} />
-//             );
-//          },
-//          tabBarColor: Colors.accentColor,
-//       },
-//    },
-// };
-
-// const MealsFavNavigator =
-//    Platform.OS === "android"
-//       ? createMaterialBottomTabNavigator(tabsScreenContent, {
-//            //   activeTintColor: Colors.accentColor,
-//            activeColor: "white",
-//            shifting: true,
-//         })
-//       : createBottomTabNavigator(tabsScreenContent, {
-//            tabBarOptions: {
-//               labelStyle: {
-//                  fontFamily: "open-sans",
-//               },
-//               activeTintColor: Colors.accentColor,
-//            },
-//         });
-
-// const filterNavigator = createStackNavigator(
-//    {
-//       Filters: FiltersScreen,
-//    },
-//    {
-//       defaultNavigationOptions: defaultStackNavOptions,
-//       navigationOptions: {
-//          drawerLabel: "Filters",
-//       },
-//    }
-// );
 
 const mainNavigator = createDrawerNavigator(
    {

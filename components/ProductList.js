@@ -1,27 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { View, FlatList, StyleSheet, Text } from "react-native";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addCartItem } from "../store/actions/cart";
 
 import ProductItem from "../components/ProductItem";
 const ProductList = (props) => {
    const products = useSelector((state) => state.products);
+   const dispatch = useDispatch();
 
    const renderItem = (itemData) => {
-      // const isFavorite = favoriteMeals.some(
-      //    (meal) => meal.id === itemData.item.id
-      // );
-
       return (
          <ProductItem
             item={itemData.item}
+            onAddItemToCart={() => {
+               // Add it to store
+               dispatch(
+                  addCartItem({
+                     product: itemData.item,
+                     quantity: 1,
+                  })
+               );
+               props.navigation.navigate({
+                  routeName: "cart",
+               });
+            }}
             onSelectItem={() => {
                props.navigation.navigate({
-                  routeName: "ProductDetail",
+                  routeName: "productDetail",
                   params: {
-                     mealId: itemData.item.id,
-                     mealTitle: itemData.item.title,
-                     isCurrentMealFavorite: isFavorite,
+                     id: itemData.item.id,
+                     productTitle: itemData.item.name,
                   },
                });
             }}

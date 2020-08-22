@@ -17,4 +17,21 @@ const styles = StyleSheet.create({
    },
 });
 
+OwnProductsScreen.navigationOptions = (navigationData) => {
+   return {
+      title: "Products",
+      headerLeft: () => (
+         <HeaderButtons HeaderButtonComponent={HeaderButton}>
+            <Item
+               title="Menu"
+               iconName="ios-menu"
+               onPress={() => {
+                  navigationData.navigation.toggleDrawer();
+               }}
+            />
+         </HeaderButtons>
+      ),
+   };
+};
+
 export default OwnProductsScreen;

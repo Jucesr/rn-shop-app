@@ -37,7 +37,9 @@ ShopScreen.navigationOptions = (navigationData) => {
                title="Cart"
                iconName="md-cart"
                onPress={() => {
-                  console.log("Open cart");
+                  navigationData.navigation.navigate({
+                     routeName: "cart",
+                  });
                }}
             />
          </HeaderButtons>
