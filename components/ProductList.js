@@ -10,10 +10,21 @@ const ProductList = (props) => {
    const dispatch = useDispatch();
 
    const renderItem = (itemData) => {
+      const onSeeDetails = () => {
+         props.navigation.navigate({
+            routeName: "productDetail",
+            params: {
+               id: itemData.item.id,
+               productTitle: itemData.item.name,
+            },
+         });
+      };
       return (
          <ProductItem
             item={itemData.item}
-            onAddItemToCart={() => {
+            actionText="Add to cart"
+            secondActionText="Details"
+            onAction={() => {
                // Add it to store
                dispatch(
                   addCartItem({
@@ -25,22 +36,15 @@ const ProductList = (props) => {
                   routeName: "cart",
                });
             }}
-            onSelectItem={() => {
-               props.navigation.navigate({
-                  routeName: "productDetail",
-                  params: {
-                     id: itemData.item.id,
-                     productTitle: itemData.item.name,
-                  },
-               });
-            }}
+            onSecondAction={onSeeDetails}
+            onSelectItem={onSeeDetails}
          />
       );
    };
 
    if (products.length === 0 || !products) {
       return (
-         <View style={styles.content}>
+         <View style={styles.screen}>
             <Text>No products found. Add some</Text>
          </View>
       );

@@ -8,12 +8,14 @@ import { Provider } from "react-redux";
 import Navigator from "./navigation/index";
 import productReducer from "./store/reducers/products";
 import cartReducer from "./store/reducers/cart";
+import ordersReducer from "./store/reducers/orders";
 
 enableScreens();
 
 const rootReducer = combineReducers({
    products: productReducer,
    cart: cartReducer,
+   orders: ordersReducer,
 });
 
 const store = createStore(rootReducer);

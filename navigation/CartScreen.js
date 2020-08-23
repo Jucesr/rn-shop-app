@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 
 import { deleteCartItem, updateCartItem } from "../store/actions/cart";
+import { addOrder } from "../store/actions/orders";
 
 import { formatValue } from "../utils/index";
 
@@ -36,6 +37,10 @@ const CartScreen = (props) => {
                <Button
                   buttonStyle={styles.buttonPlace}
                   textStyle={styles.buttonPlaceText}
+                  onPress={() => {
+                     dispatch(addOrder(cart));
+                     props.navigation.navigate("orders");
+                  }}
                >
                   Place Order
                </Button>

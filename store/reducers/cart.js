@@ -6,6 +6,8 @@ import {
    UPDATE_CART_ITEM,
 } from "../actions/cart";
 
+import { ADD_ORDER } from "../actions/orders";
+
 const initialState = {
    items: [],
    total: 0,
@@ -70,6 +72,10 @@ export default (state = initialState, action) => {
             items: newItems,
             total: newItems.reduce((acum, item) => acum + item.getTotal(), 0),
          };
+      }
+
+      case ADD_ORDER: {
+         return initialState;
       }
 
       default:

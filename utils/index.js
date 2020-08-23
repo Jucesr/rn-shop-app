@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const formatValue = (format, value) => {
    const type = typeof format === "string" ? format : format.type;
    const decimals = typeof format === "string" ? 2 : format.decimals;

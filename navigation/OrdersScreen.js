@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
-import { View, Text, StyleSheet } from "react-native";
+import { View, FlatList, StyleSheet } from "react-native";
+import { useSelector, useDispatch } from "react-redux";
+
 import HeaderButton from "../components/HeaderButton";
+import OrderItem from "../components/OrderItem";
+
 const OrdersScreen = (props) => {
+   const orders = useSelector((state) => state.orders);
+
    return (
       <View style={styles.screen}>
-         <Text>Orders Screen</Text>
+         <FlatList
+            data={orders}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => <OrderItem item={item} />}
+            style={{ width: "100%" }}
+            contentContainerStyle={styles.list}
+         />
       </View>
    );
 };

@@ -32,10 +32,10 @@ const ProductItem = ({ item, ...props }) => {
                </View>
                <View style={{ ...styles.row, ...styles.detail }}>
                   <Button
-                     onPress={props.onSelectItem}
+                     onPress={props.onSecondAction}
                      style={styles.detailButton}
                   >
-                     Details
+                     {props.secondActionText}
                   </Button>
                   <DefaultText style={styles.detailText}>
                      {formatValue("currency", item.unit_rate)}
@@ -44,9 +44,9 @@ const ProductItem = ({ item, ...props }) => {
                   <Button
                      buttonStyle={styles.detailButton}
                      textStyle={styles.detailTextButton}
-                     onPress={props.onAddItemToCart}
+                     onPress={props.onAction}
                   >
-                     Add to cart
+                     {props.actionText}
                   </Button>
                </View>
             </View>

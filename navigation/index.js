@@ -7,7 +7,7 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 
-import AddProductScreen from "./AddProductScreen";
+import ProductFormScreen from "./ProductFormScreen";
 import OrdersScreen from "./OrdersScreen";
 import CartScreen from "./CartScreen";
 import OwnProductsScreen from "./OwnProductsScreen";
@@ -52,6 +52,7 @@ const OrdersNavigator = createStackNavigator(
 const ProductsNavigator = createStackNavigator(
    {
       products: OwnProductsScreen,
+      productForm: ProductFormScreen,
    },
    {
       defaultNavigationOptions: defaultStackNavOptions,
