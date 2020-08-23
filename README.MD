@@ -4,14 +4,14 @@ My own version of the Shop App made in the course of Udemy [React Native - The p
 
 ## Screenshots
 
-| Shop Screen                                                                             | Cart Screen                                                                             |
-| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ShopScreen.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/CartScreen.png"> |
+| Shop Screen                                                                                      | Cart Screen                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ShopScreen.PNG?raw=true"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/CartScreen.PNG?raw=true"> |
 
-| Orders Screen                                                                             | Own Product Screen                                                                             |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OrdersScreen.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen.png"> |
+| Orders Screen                                                                                      | Own Product Screen                                                                                      |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OrdersScreen.PNG?raw=true"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen.PNG?raw=true"> |
 
-| Product Form                                                                             | Own Product Screen 2                                                                            |
-| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ProductForm.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen2.png"> |
+| Product Form                                                                                      | Own Product Screen 2                                                                                     |
+| ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ProductForm.PNG?raw=true"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen2.PNG?raw=true"> |
