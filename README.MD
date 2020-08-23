@@ -4,14 +4,14 @@ My own version of the Shop App made in the course of Udemy [React Native - The p
 
 ## Screenshots
 
-| Shop Screen                           | Cart Screen                           |
-| ------------------------------------- | ------------------------------------- |
-| <img src="assets/img/ShopScreen.png"> | <img src="assets/img/CartScreen.png"> |
+| Shop Screen                                                                             | Cart Screen                                                                             |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ShopScreen.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/CartScreen.png"> |
 
-| Orders Screen                           | Own Product Screen                           |
-| --------------------------------------- | -------------------------------------------- |
-| <img src="assets/img/OrdersScreen.png"> | <img src="assets/img/OwnProductsScreen.png"> |
+| Orders Screen                                                                             | Own Product Screen                                                                             |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OrdersScreen.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen.png"> |
 
-| Product Form                           | Own Product Screen 2                          |
-| -------------------------------------- | --------------------------------------------- |
-| <img src="assets/img/ProductForm.png"> | <img src="assets/img/OwnProductsScreen2.png"> |
+| Product Form                                                                             | Own Product Screen 2                                                                            |
+| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/ProductForm.png"> | <img src="https://github.com/Jucesr/rn-shop-app/blob/master/assets/img/OwnProductsScreen2.png"> |
